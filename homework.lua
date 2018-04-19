@@ -1,4 +1,4 @@
-﻿-- 導入 "js" 模組
+-- 導入 "js" 模組
 local js = require "js"
 -- global 就是 javascript 的 window
 local global = js.global
@@ -118,106 +118,17 @@ function star(x, y, r, angle, solid, color)
     end
 end
 --第一排星星
-star(20, 20, 8, 36, true, "#FFFFFF")
-
-star(20, 55, 8, 36, true, "#FFFFFF")
-
-star(20, 90, 8, 36, true, "#FFFFFF")
-
-star(20, 125, 8, 36, true, "#FFFFFF")
-
-star(20, 160, 8, 36, true, "#FFFFFF")
---第三排
-star(66, 20, 8, 36, true, "#FFFFFF")
-
-star(66, 55, 8, 36, true, "#FFFFFF")
-
-star(66, 90, 8, 36, true, "#FFFFFF")
-
-star(66, 125, 8, 36, true, "#FFFFFF")
-
-star(66, 160, 8, 36, true, "#FFFFFF")
---五
-star(112, 20, 8, 36, true, "#FFFFFF")
-
-star(112, 55, 8, 36, true, "#FFFFFF")
-
-star(112, 90, 8, 36, true, "#FFFFFF")
-
-star(112, 125, 8, 36, true, "#FFFFFF")
-
-star(112, 160, 8, 36, true, "#FFFFFF")
---七
-star(158, 20, 8, 36, true, "#FFFFFF")
-
-star(158, 55, 8, 36, true, "#FFFFFF")
-
-star(158, 90, 8, 36, true, "#FFFFFF")
-
-star(158, 125, 8, 36, true, "#FFFFFF")
-
-star(158, 160, 8, 36, true, "#FFFFFF")
---十一
-
-star(245, 20, 8, 36, true, "#FFFFFF")
-
-star(245, 55, 8, 36, true, "#FFFFFF")
-
-star(245, 90, 8, 36, true, "#FFFFFF")
-
-star(245, 125, 8, 36, true, "#FFFFFF")
-
-star(245, 160, 8, 36, true, "#FFFFFF")
---九
-star(200, 20, 8, 36, true, "#FFFFFF")
-
-star(200, 55, 8, 36, true, "#FFFFFF")
-
-star(200, 90, 8, 36, true, "#FFFFFF")
-
-star(200, 125, 8, 36, true, "#FFFFFF")
-
-star(200, 160, 8, 36, true, "#FFFFFF")
---二
-star(43, 37.5, 8, 36, true, "#FFFFFF")
-
-star(43, 72.5, 8, 36, true, "#FFFFFF")
-
-star(43, 107.5, 8, 36, true, "#FFFFFF")
-
-star(43, 142.5, 8, 36, true, "#FFFFFF")
---四
-star(89, 37.5, 8, 36, true, "#FFFFFF")
-
-star(89, 72.5, 8, 36, true, "#FFFFFF")
-
-star(89, 107.5, 8, 36, true, "#FFFFFF")
-
-star(89, 142.5, 8, 36, true, "#FFFFFF")
---六
-star(135, 37.5, 8, 36, true, "#FFFFFF")
-
-star(135, 72.5, 8, 36, true, "#FFFFFF")
-
-star(135, 107.5, 8, 36, true, "#FFFFFF")
-
-star(135, 142.5, 8, 36, true, "#FFFFFF")
---八
-star(181, 37.5, 8, 36, true, "#FFFFFF")
-
-star(181, 72.5, 8, 36, true, "#FFFFFF")
-
-star(181, 107.5, 8, 36, true, "#FFFFFF")
-
-star(181, 142.5, 8, 36, true, "#FFFFFF")
---十
-star(227, 37.5, 8, 36, true, "#FFFFFF")
-
-star(227, 72.5, 8, 36, true, "#FFFFFF")
-
-star(227, 107.5, 8, 36, true, "#FFFFFF")
-
-star(227, 142.5, 8, 36, true, "#FFFFFF")
+for i = 0, 5 do
+    for j = 0, 4 do
+        star(20+46*i, 20+35*j, 8, 36, true, "#fffff")
+    end
+end
+--第二排星星
+for i = 0, 4 do
+    for j = 0, 3 do
+        star(43+46*i, 37.5+35*j, 8, 36, true, "#fffff")
+    end
+end
 
 
 
