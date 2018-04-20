@@ -129,3 +129,4 @@ for i = 0, 4 do
         star(43+46*i, 37.5+35*j, 8, 36, true, "#fffff")
     end
 end
+--結束
